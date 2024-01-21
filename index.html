@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đặt vé xem phim</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css?fbclid=IwAR13GeCKpDnRYumLZWBe8nDm7dQ6Ue96ZQS4S9ZRyHQs9_vmwN_tBqeu0r0">
+</head>
+<body>
+    <!-- header -->
+    <header id="header">
+        <!-- header left -->
+        <div class="header_left">
+            <a href="index.html" style="text-decoration: none;">
+                <img src="./assets/css/img/MoMo_Logo.png" alt="" class="header_left-img header_margin">
+            </a>
+        </div>
+        <!-- header between -->
+        <div class="header_between">
+            <!-- header between showtimes -->
+            <div class="header_between-showtimes">
+                <p class="header_margin header_between-text ">Lịch chiếu</p>
+            </div>
+
+            <!-- header between cinema -->
+            <div class="header_between-cinema">
+                <p class="header_margin header_between-text">rạp chiếu</p>
+            </div>
+            <p class="header_margin header_between-text">Phim chiếu</p>
+            <p class="header_margin header_between-text">Review phim</p>
+            <p class="header_margin header_between-text">Top phim</p>
+            <!-- header between blog -->
+            <div class="header_between-blog">
+                <p class="header_margin header_between-text">Blog phim</p>
+            </div>
+        </div>
+        <div class="header_right">
+            <i class="fa-solid fa-cart-shopping header_margin header_between-text header_right-item"></i>
+            <i class="fa-solid fa-magnifying-glass header_margin header_between-text header_right-item"></i>
+            <div class="header_right-user">
+                <i class="fa-regular fa-circle-user header header_margin header_between-text header_right-item"></i>
+                <ul class="header_right-user-elment">
+                    <li class="user-elment">Đăng Nhập</li>
+                    <li class="user-elment">Đăng Ký</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- slider -->
+    <div id="slider">
+        <div class="slider_left">
+            <h1 class="slider_left-title">Lợi ích khi mua vé trên MoMo</h1>
+            <ul class="slider_left-content">
+                <li class="slider_left-content-text"><i class="fa-solid fa-circle-check slider_left-content-item"></i> Mua vé online, <strong>trải nghiệm phim hay</strong></li>
+                <li class="slider_left-content-text"><i class="fa-solid fa-circle-check slider_left-content-item"></i> <strong>Đặt vé an toàn</strong> trên MoMo</li>
+                <li class="slider_left-content-text"><i class="fa-solid fa-circle-check slider_left-content-item"></i> Tha hồ <strong>Chọn chỗ ngồi, mua bắp nước</strong> tiện lợi</li>
+                <li class="slider_left-content-text"><i class="fa-solid fa-circle-check slider_left-content-item"></i> <strong>Lịch sử đặt vé</strong> được lưu lại ngay</li>
+            </ul>
+            <button class="slider_right-btn">Đặt Vé Ngay</button>
+        </div>
+        <div class="slider_right">
+            <div class="slider_right-wrapper">
+                <div class="slider_right-wrapper-show">
+                    <img src="./assets/css/img/momo-upload-api-230912110416-638301134564267185.jpg" alt="" class="slider_right-img">
+                </div>
+                <div class="slider_right-wrapper-show">
+                    <img src="./assets/css/img/momo-upload-api-230912110336-638301134161666249.jpg" alt="" class="slider_right-img">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- cotent -->
+    <div id="content">
+        <!-- content show -->
+        <div class="content_show">
+            <h1 class="content_show-title">Phim đang chiếu</h1>
+            <div class="content_show-flim">
+                <!-- coming soon 1 -->
+                <div class="content_show-flim-all">
+                    <div class="show-flim-all-element">
+                        <img src="./assets/css/img/ảnh 1.png" alt="" class="show-flim-all-element-img">
+                        <div class="show-flim-element-text">
+                            <p class="show-flim-element-old">P</p>
+                            <i class="fa-regular fa-circle-play show-flim-element-icon"></i>
+                            <p class="show-flim-element-number">1</p>
+                        </div>
+                    </div>
+                    <div class="content_show-flim-name">
+                        <p class="flim-name">Nhà Vịt Di Cư</p>
+                        <p class="flim-category">Hài,Hoạt Hình</p>
+                        <p class="content_show-flim-vote"><i class="fa-solid fa-star flim-vote-star "></i> 9.4</p>
+                    </div>
+                </div>
+                <!-- coming soon 2 -->
+                <div class="content_show-flim-all">
+                    <div class="show-flim-all-element">
+                        <img src="./assets/css/img/ảnh 2.jpg" alt="" class="show-flim-all-element-img">
+                        <div class="show-flim-element-text">
+                            <p class="show-flim-element-old old_18">18+</p>
+                            <i class="fa-regular fa-circle-play show-flim-element-icon"></i>
+                            <p class="show-flim-element-number">2</p>
+                        </div>
+                    </div>
+                    <div class="content_show-flim-name">
+                        <p class="flim-name">Giao Ước Quỷ</p>
+                        <p class="flim-category">Kinh Dị</p>
+                        <p class="content_show-flim-vote"><i class="fa-solid fa-star flim-vote-star "></i> 5.8</p>
+                    </div>
+                </div>
+                <!-- coming soon 3 -->
+                <div class="content_show-flim-all">
+                    <div class="show-flim-all-element">
+                        <img src="./assets/css/img/ảnh 3.jpg" alt="" class="show-flim-all-element-img">
+                        <div class="show-flim-element-text">
+                            <p class="show-flim-element-old old_13">13+</p>
+                            <i class="fa-regular fa-circle-play show-flim-element-icon"></i>
+                            <p class="show-flim-element-number">3</p>
+                        </div>
+                    </div>
+                    <div class="content_show-flim-name">
+                        <p class="flim-name">Aquaman:Vương quốc...</p>
+                        <p class="flim-category">Phiêu lưu,hành động</p>
+                        <p class="content_show-flim-vote"><i class="fa-solid fa-star flim-vote-star "></i> 9.2</p>
+                    </div>
+                </div>
+                <!-- coming soon 4 -->
+                <div class="content_show-flim-all">
+                    <div class="show-flim-all-element">
+                        <img src="./assets/css/img/ảnh 4.jpg" alt="" class="show-flim-all-element-img">
+                        <div class="show-flim-element-text">
+                            <p class="show-flim-element-old">P</p>
+                            <i class="fa-regular fa-circle-play show-flim-element-icon"></i>
+                            <p class="show-flim-element-number">4</p>
+                        </div>
+                    </div>
+                    <div class="content_show-flim-name">
+                        <p class="flim-name">Trên bàn nhậu, dưới bàn...</p>
+                        <p class="flim-category">Hài</p>
+                        <p class="content_show-flim-vote"><i class="fa-solid fa-star flim-vote-star "></i> 7.7</p>
+                    </div>
+                </div>
+                <!-- coming soon 5 -->
+                <div class="content_show-flim-all">
+                    <div class="show-flim-all-element">
+                        <img src="./assets/css/img/ảnh 5.jpg" alt="" class="show-flim-all-element-img">
+                        <div class="show-flim-element-text">
+                            <p class="show-flim-element-old">P</p>
+                            <i class="fa-regular fa-circle-play show-flim-element-icon"></i>
+                            <p class="show-flim-element-number">5</p>
+                        </div>
+                    </div>
+                    <div class="content_show-flim-name">
+                        <p class="flim-name">Thiếu niên và chim Diệc</p>
+                        <p class="flim-category">Hoạt Hình,phiêu lưu</p>
+                        <p class="content_show-flim-vote"><i class="fa-solid fa-star flim-vote-star "></i> 9</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- content coming -->
+        <div class="content_coming">
+            <h1 class="content_coming-title">Phim Sắp Chiếu</h1>
+            <div class="content_coming-flim">
+                <!-- coming 1 -->
+                <div class="content_coming-flim-all">
+                    <div class="coming-flim-all-element">
+                        <img src="./assets/css/img/ảnh 6.jpg" alt="" class="coming-flim-all-element-img">
+                        <div class="coming-flim-element-text">
+                            <div class="old_move">
+                                <p class="coming-flim-element-old">P</p>
+                            </div>
+                            <i class="fa-regular fa-circle-play coming-flim-element-icon"></i>
+                        </div>
+                    </div>
+                    <div class="content_coming-flim-name">
+                        <p class="flim-name">Những Mảnh Ghép Cảm xúc</p>
+                        <p class="flim-category">Hài,Hoạt Hình</p>
+                    </div>
+                </div>
+                <!-- coming 2 -->
+                <div class="content_coming-flim-all">
+                    <div class="coming-flim-all-element">
+                        <img src="./assets/css/img/ảnh 7.jpg" alt="" class="coming-flim-all-element-img">
+                        <div class="coming-flim-element-text">
+                            <div class="old_move">
+                                <p class="coming-flim-element-old">P</p>
+                            </div>
+                            <i class="fa-regular fa-circle-play coming-flim-element-icon"></i>
+                        </div>
+                    </div>
+                    <div class="content_coming-flim-name">
+                        <p class="flim-name">Garfield - Mèo Béo Siêu...</p>
+                        <p class="flim-category">Hài, Phiêu lưu, Hoạt Hình</p>
+                    </div>
+                </div>
+                <!-- coming 3 -->
+                <div class="content_coming-flim-all">
+                    <div class="coming-flim-all-element">
+                        <img src="./assets/css/img/ảnh 8.jpg" alt="" class="coming-flim-all-element-img">
+                        <div class="coming-flim-element-text">
+                            <div class="old_move">
+                                <p class="coming-flim-element-old">P</p>
+                            </div>
+                            <i class="fa-regular fa-circle-play coming-flim-element-icon"></i>
+                        </div>
+                    </div>
+                    <div class="content_coming-flim-name">
+                        <p class="flim-name">Elio: Cậu Bé Đến Từ Trái... </p>
+                        <p class="flim-category">Gia Đình, Hài, Phiêu lưu</p>
+                    </div>
+                </div>
+                <!-- coming 4 -->
+                <div class="content_coming-flim-all">
+                    <div class="coming-flim-all-element">
+                        <img src="./assets/css/img/ảnh 9.jpg" alt="" class="coming-flim-all-element-img">
+                        <div class="coming-flim-element-text">
+                            <div class="old_move old_13">
+                                <p class="coming-flim-element-old">13+</p>
+                            </div>
+                            <i class="fa-regular fa-circle-play coming-flim-element-icon"></i>
+                        </div>
+                    </div>
+                    <div class="content_coming-flim-name">
+                        <p class="flim-name">Argylle: Siêu Điệp Viên</p>
+                        <p class="flim-category">Phiêu lưu, Hành động</p>
+                    </div>
+                </div>
+                <!-- coming 5 -->
+                <div class="content_coming-flim-all">
+                    <div class="coming-flim-all-element">
+                        <img src="./assets/css/img/ảnh 10.jpg" alt="" class="coming-flim-all-element-img">
+                        <div class="coming-flim-element-text">
+                            <div class="old_move old_13">
+                                <p class="coming-flim-element-old">13+</p>
+                            </div>
+                            <i class="fa-regular fa-circle-play coming-flim-element-icon"></i>
+                        </div>
+                    </div>
+                    <div class="content_coming-flim-name">
+                        <p class="flim-name">Godzilla x Kong: Đế Chế mới</p>
+                        <p class="flim-category">Khoa học viễn tưởng, Phiêu lưu</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- content showtimes -->
+        <div class="content_showtimes">
+            <h1 class="content_showtimes-title">Lịch Chiếu Phim</h1>
+            <div class="content_showtimes-cinema">
+                <!-- content showtimes cinema header -->
+                <div class="showtimes-cinema-header">
+                    <!-- content showtimes cinema GPS -->
+                    <div class="showtimes-cinema-GPS">
+                        <p class="showtimes-cinema-GPS-location">Vị Trí:</p>
+                        <div class="showtimes-cinema-GPS-text">
+                            <p class="showtimes-cinema-GPS-text-name">Hồ Chí Minh</p>
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                    </div>
+                    <!-- content showtimes cinema Logo -->
+                    <div class="showtimes-cinema-logo">
+                        <p class="showtimes-cinema-logo-text">Rạp Chiếu: </p>
+                        <div class="showtimes-cinema-logo-cover">
+                            <div class="showtimes-cinema-logo-all">
+                                <img src="./assets/css/img/Logo_all.png" alt="" class="showtimes-cinema-logo-item">
+                                <p class="showtimes-cinema-logo-name">Tất Cả</p>
+                            </div>
+                            <div class="showtimes-cinema-logo-all">
+                                <img src="./assets/css/img/Logo_CGV.jpg" alt="" class="showtimes-cinema-logo-item">
+                                <p class="showtimes-cinema-logo-name">CGV</p>
+                            </div>
+                            <div class="showtimes-cinema-logo-all">
+                                <img src="./assets/css/img/Logo_lotte_cinema.png" alt="" class="showtimes-cinema-logo-item">
+                                <p class="showtimes-cinema-logo-name">LOTTE</p>
+                            </div>
+                            <div class="showtimes-cinema-logo-all">
+                                <img src="./assets/css/img/Logo_BHD.jpg" alt="" class="showtimes-cinema-logo-item">
+                                <p class="showtimes-cinema-logo-name">BHD</p>
+                            </div>
+                            <div class="showtimes-cinema-logo-all">
+                                <img src="./assets/css/img/Logo_Galaxy.png" alt="" class="showtimes-cinema-logo-item">
+                                <p class="showtimes-cinema-logo-name">GALAXY</p>
+                            </div>
+                            <div class="showtimes-cinema-logo-all">
+                                <img src="./assets/css/img/Logo_Beta.png" alt="" class="showtimes-cinema-logo-item">
+                                <p class="showtimes-cinema-logo-name">BETA</p>
+                            </div>
+                            <div class="showtimes-cinema-logo-all">
+                                <img src="./assets/css/img/Logo_cinestar.jpg" alt="" class="showtimes-cinema-logo-item">
+                                <p class="showtimes-cinema-logo-name">CINESTAR</p>
+                            </div>
+                            <div class="showtimes-cinema-logo-all">
+                                <img src="./assets/css/img/Logo_DCINE.png" alt="" class="showtimes-cinema-logo-item">
+                                <p class="showtimes-cinema-logo-name">DCINE</p>
+                            </div>
+                            <div class="showtimes-cinema-logo-all">
+                                <img src="./assets/css/img/Logo_MEGAGS.jpg" alt="" class="showtimes-cinema-logo-item">
+                                <p class="showtimes-cinema-logo-name">MEGA GS</p>
+                            </div>
+                            <div class="showtimes-cinema-logo-all">
+                                <img src="./assets/css/img/Logo_cinemax.jpg" alt="" class="showtimes-cinema-logo-item">
+                                <p class="showtimes-cinema-logo-name">CINEMAX</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- content showtimes cinema between -->
+                <div class="showtimes-cinema-between">
+                    <!-- content showtimes cinema between left -->
+                    <div class="showtimes-cinema-between-left">
+                        <div class="showtimes-cinema-between-left-search">
+                            <div class="between-left-search-header">
+                                <input type="text" placeholder="Tìm theo rạp chiếu" class="between-left-search-header-input">
+                                <i class="fa-solid fa-magnifying-glass between-left-search-icon"></i>
+                            </div>
+                        </div>
+                        <div class="showtimes-between-left-address">
+                            <div class="between-left-address-hover between-left-address-elment">
+                                <div class="between-left-address-name">
+                                    <img src="./assets/css/img/Logo_cinestar.jpg" alt="" class="between-left-address-logo">
+                                    <p class="between-left-address-text">CineStar Hai Bà Trưng</p>
+                                </div>
+                                <i class="fa-solid fa-angle-right between-left-address-icon"></i>
+                            </div>
+                            <div class="between-left-address-elment between-left-address-elment-no-hover">
+                                <div class="between-left-address-name">
+                                    <img src="./assets/css/img/Logo_cinestar.jpg" alt="" class="between-left-address-logo">
+                                    <p class="between-left-address-text">CineStar Hai Bà Trưng</p>
+                                </div>
+                                <i class="fa-solid fa-angle-right between-left-address-icon"></i>
+                            </div>
+                            <!-- <button class="between-left-address-btn">Xem Thêm</button> -->
+                        </div>
+                    </div>
+                    <!-- content showtimes cinema right -->
+                    <div class="showtimes-cinema-right">
+                        <!-- content showtimes cinema between right location -->
+                        <div class="between-right-location">
+                            <img src="./assets/css/img/Logo_cinestar.jpg" alt="" class="between-right-location-img">
+                            <div class="between-right-location-text">
+                                <p class="right-location-text-element">Lịch chiếu phim của CineStar Hai Bà Trưng</p>
+                                <p class="right-location-text-element">135 Hai Bà Trưng, Bến Nghé, Quận 1, Thành phố Hồ Chí Minh</p>
+                            </div>
+                        </div>
+                        <!-- content show times between right date -->
+                        <div class="between-right-date">
+                            <div class="between-right-date-all between-right-date-element">
+                                <div class="between-right-date-day between-right-date-today">
+                                    <p class="between-right-date-day-element">7</p>
+                                </div>
+                                <div class="between-right-date-rank">
+                                    <p class="between-right-date-rank-element between-right-date-rank-today">Hôm nay</p>
+                                </div>
+                            </div>
+                            <div class="between-right-date-all">
+                                <div class="between-right-date-day">
+                                    <p class="between-right-date-day-element">8</p>
+                                </div>
+                                <div class="between-right-date-rank">
+                                    <p class="between-right-date-rank-element">Thứ Hai</p>
+                                </div>
+                            </div><div class="between-right-date-all">
+                                <div class="between-right-date-day">
+                                    <p class="between-right-date-day-element">9</p>
+                                </div>
+                                <div class="between-right-date-rank">
+                                    <p class="between-right-date-rank-element">Thứ Ba</p>
+                                </div>
+                            </div><div class="between-right-date-all">
+                                <div class="between-right-date-day">
+                                    <p class="between-right-date-day-element">10</p>
+                                </div>
+                                <div class="between-right-date-rank">
+                                    <p class="between-right-date-rank-element">Thứ Tư</p>
+                                </div>
+                            </div><div class="between-right-date-all">
+                                <div class="between-right-date-day">
+                                    <p class="between-right-date-day-element">11</p>
+                                </div>
+                                <div class="between-right-date-rank">
+                                    <p class="between-right-date-rank-element">Thứ Năm</p>
+                                </div>
+                            </div><div class="between-right-date-all">
+                                <div class="between-right-date-day">
+                                    <p class="between-right-date-day-element">12</p>
+                                </div>
+                                <div class="between-right-date-rank">
+                                    <p class="between-right-date-rank-element">Thứ Sáu</p>
+                                </div>
+                            </div><div class="between-right-date-all">
+                                <div class="between-right-date-day">
+                                    <p class="between-right-date-day-element">13</p>
+                                </div>
+                                <div class="between-right-date-rank">
+                                    <p class="between-right-date-rank-element">Thứ Bảy</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- content showtimes cinema flim  -->
+                        <div class="showtimes-cinema-flim">
+                            <img src="./assets/css/img/ảnh 1.png" alt="" class="showtimes-cinema-flim-img">
+                            <div class="showtimes-cinema-flim-element">
+                                <p class="cinema-flim-element-old">P</p>
+                                <p class="cinema-flim-element-name">Nhà Vịt Di Cư</p>
+                                <p class="cinema-flim-element-category">Hài, Hoạt Hình</p>
+                                <p class="cinema-flim-element-form">2D Lồng Tiếng</p>
+                                <div class="cinema-flim-element-time">
+                                    <div class="cinema-flim-element-time-hour">
+                                        <p class="cinema-flim-element-time-hour-text">11h50</p>
+                                    </div>
+                                    <div class="cinema-flim-element-time-hour">
+                                        <p class="cinema-flim-element-time-hour-text">13h30</p>
+                                    </div>
+                                    <div class="cinema-flim-element-time-hour">
+                                        <p class="cinema-flim-element-time-hour-text">18h00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="showtimes-cinema-flim">
+                            <img src="./assets/css/img/ảnh 3.jpg" alt="" class="showtimes-cinema-flim-img">
+                            <div class="showtimes-cinema-flim-element">
+                                <p class="cinema-flim-element-old old_13">13+</p>
+                                <p class="cinema-flim-element-name">Aquaman: Vương Quốc Thất Lạc</p>
+                                <p class="cinema-flim-element-category">Hành động, Phiêu lưu, Viễn tưởng</p>
+                                <p class="cinema-flim-element-form">2D Phụ đề</p>
+                                <div class="cinema-flim-element-time">
+                                    <div class="cinema-flim-element-time-hour">
+                                        <p class="cinema-flim-element-time-hour-text">18h00</p>
+                                    </div>
+                                    <div class="cinema-flim-element-time-hour">
+                                        <p class="cinema-flim-element-time-hour-text">20h20</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="content-showtimes-btn">Xem Tất Cả</button>
+        </div>
+        <!-- content review -->
+        <div class="content_review">
+            <div class="content_review-left">
+                <p class="content_review-left-header">MOMO CINEMA</p>
+                <h3 class="content_review-left-title">Review phim chiếu rạp trên Momo</h3>
+                <p class="content_review-left-paragrap">nền tảng đánh giá, review phim chiếu rạp uy tín, chất lượng từ các nhà phê bình và các người dùng Momo</p>
+                <div class="content_review-evaluate">
+                    <div class="content_review-evaluate-element">
+                        <p class="review-evaluate-element-number">368+</p>
+                        <p class="review-evaluate-element-text">Phim có review</p>
+                    </div>
+                    <div class="content_review-evaluate-element">
+                        <p class="review-evaluate-element-number">32K+</p>
+                        <p class="review-evaluate-element-text">Số lượt đánh giá</p>
+                    </div>
+                    <div class="content_review-evaluate-element">
+                        <p class="review-evaluate-element-number">13K+</p>
+                        <p class="review-evaluate-element-text">Người đánh giá</p>
+                    </div>
+                </div>
+            </div>
+                <img src="./assets/css/img/Review phim momo.webp" alt="" class="content_review-right">
+        </div>
+
+        <!-- content top phim -->
+        <div class="content_top-flim">
+            <h1 class="content_top-flim-title">Top phim hay trên Momo</h1>
+            <div class="content_top-flim-all">
+                <div class="content_top-flim-all-element">
+                    <img src="./assets/css/img/Top phim 1.png" alt="" class="top-flim-all-element-img">
+                    <p class="top-flim-all-element-name">Top phim siêu anh hùng năm 2023 đáng được mong đợi nhất </p>
+                    <p class="top-flim-all-element-paragrap">Siêu anh hùng luôn là đề tài được các nhà làm phim nung nấu nhiều ý tưởng và khai thác triệt để. cùng...</p>
+                    <div class="top-flim-all-element-view">
+                        <p class="top-flim-all-elenment-view-child">13/06/2023</p>
+                        <p class="top-flim-all-elenment-view-child top-flim-all-elenment-view-child-between">.</p>
+                        <p class="top-flim-all-elenment-view-child"><i class="fa-solid fa-eye"></i> 2.7K lượt xem</p>
+                    </div>
+                </div>
+                <div class="content_top-flim-all-element">
+                    <img src="./assets/css/img/Top phim 2.png" alt="" class="top-flim-all-element-img">
+                    <p class="top-flim-all-element-name">Top 14 phim hành động viễn tưởng 2023 lôi cuốn và hấp dẫn </p>
+                    <p class="top-flim-all-element-paragrap">Năm 2023 đã chứng kiến sự trỗi dậy mạnh mẽ của thể loại phim hành động viễn tưởng với những tác phẩm ...</p>
+                    <div class="top-flim-all-element-view">
+                        <p class="top-flim-all-elenment-view-child">13/06/2023</p>
+                        <p class="top-flim-all-elenment-view-child top-flim-all-elenment-view-child-between">.</p>
+                        <p class="top-flim-all-elenment-view-child"><i class="fa-solid fa-eye"></i> 3.8K lượt xem</p>
+                    </div>
+                </div>
+                <div class="content_top-flim-all-element">
+                    <img src="./assets/css/img/top phim 3.png" alt="" class="top-flim-all-element-img">
+                    <p class="top-flim-all-element-name">Top phim hành động Hàn Quốc mãn nhãn</p>
+                    <p class="top-flim-all-element-paragrap">phim hành động Hàn Quốc luôn được khán giả yêu thích bởi sự hấp dẫn, kịch tính và mãn nhãn</p>
+                    <div class="top-flim-all-element-view">
+                        <p class="top-flim-all-elenment-view-child">13/06/2023</p>
+                        <p class="top-flim-all-elenment-view-child top-flim-all-elenment-view-child-between">.</p>
+                        <p class="top-flim-all-elenment-view-child"><i class="fa-solid fa-eye"></i> 4.6K lượt xem</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- content blog -->
+        <div class="content_blog">
+            <div class="content_blog-header">
+                <h1 class="content_blog-header-title">Blog phim ảnh</h1>
+                <p class="content_blod-header-title-below">Tổng hợp và Review các bộ phim hot, và phim chiếu rạp hay mỗi ngày</p>
+            </div>
+            <div class="content_blog-container">
+                <div class="content_blog-container-header">
+                    <p class="blog-container-header-text blog-container-header-text-border">Mới nhất</p>
+                    <p class="blog-container-header-text">Xem nhiều nhất</p>
+                </div>
+                    <div class="content_blog-container-all">
+                        <div class="content_blog-container-flim">
+                            <img src="./assets/css/img/Blog phim 1.jpg" alt="" class="blog-container-flim-img">
+                            <p class="blog-container-flim-paragrap">Danh sách phim hay trên Nextflix tháng 12/2023</p>
+                            <p class="blog-container-flim-view">5.5k lượt xem</p>
+                        </div>
+                        <div class="content_blog-container-flim">
+                            <img src="./assets/css/img/Blog phim 2.jpg" alt="" class="blog-container-flim-img">
+                            <p class="blog-container-flim-paragrap">Danh sách Anime được chuyển thể live-action năm 2024</p>
+                            <p class="blog-container-flim-view"></p>
+                        </div>
+                        <div class="content_blog-container-flim">
+                            <img src="./assets/css/img/Blog phim 3.jpg" alt="" class="blog-container-flim-img">
+                            <p class="blog-container-flim-paragrap">Top phim bộ Hàn Quốc đáng xem năm 2023</p>
+                            <p class="blog-container-flim-view"></p>
+                        </div>
+                        <div class="content_blog-container-flim">
+                            <img src="./assets/css/img/Blog phim 4.jpg" alt="" class="blog-container-flim-img">
+                            <p class="blog-container-flim-paragrap">Top phim về trí tuệ nhân tạo đáng xem nhất</p>
+                            <p class="blog-container-flim-view">7k lượt xem</p>
+                        </div>
+                    </div>
+                    <div class="content_blog-container-all">
+                        <div class="content_blog-container-flim">
+                            <img src="./assets/css/img/Blog phim 5.jpg" alt="" class="blog-container-flim-img">
+                            <p class="blog-container-flim-paragrap">Hướng dẫn xem phim Marvel dành cho người mới bắt đầu</p>
+                            <p class="blog-container-flim-view">71.6k lượt xem</p>
+                        </div>
+                        <div class="content_blog-container-flim">
+                            <img src="./assets/css/img/BLog phim 6.jpg" alt="" class="blog-container-flim-img">
+                            <p class="blog-container-flim-paragrap">Danh sách phim hay Netflix tháng 4/2023</p>
+                            <p class="blog-container-flim-view">1.4k lượt xem</p>
+                        </div>
+                        <div class="content_blog-container-flim">
+                            <img src="./assets/css/img/BLog phim 7.jpg" alt="" class="blog-container-flim-img">
+                            <p class="blog-container-flim-paragrap">Những bộ phim kinh điển không thể bỏ qua</p>
+                            <p class="blog-container-flim-view">1k lượt xem</p>
+                        </div>
+                        <div class="content_blog-container-flim">
+                            <img src="./assets/css/img/BLog phim 8.jpg" alt="" class="blog-container-flim-img">
+                            <p class="blog-container-flim-paragrap">Top những phim Anime siêu nhân nhất định phải xem</p>
+                            <p class="blog-container-flim-view">23.5k lượt xem</p>
+                        </div>
+                    </div>
+            </div>
+            <button class="content_blog-btn"><i class="fa-solid fa-arrow-down"></i> xem thêm </button>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer id="footer">
+            <!-- footer buy -->
+            <ul class="footer_buy">
+                <p class="footer_buy-title">MUA VÉ XEM PHIM</p>
+                <li class="footer_buy-element">Lịch Chiếu phim</li>
+                <li class="footer_buy-element">Rạp CHiếu phim</li>
+                <li class="footer_buy-element">Phim chiếu rạp</li>
+                <li class="footer_buy-element">Review phim</li>
+                <li class="footer_buy-element">Top phim</li>
+                <li class="footer_buy-element">Blog phim</li>
+            </ul>
+            <!-- footer service -->
+            <ul class="footer_service">
+                <p class="footer_service-title">Dịch vụ nổi bật</p>
+                <li class="footer_service-element"><i class="fa-solid fa-ticket"></i> Vé xem phim</li>
+                <li class="footer_service-element"><i class="fa-solid fa-car"></i> Bảo hiểm ôtô</li>
+                <li class="footer_service-element"><i class="fa-solid fa-plane-departure"></i> Vé máy bay</li>
+                <li class="footer_service-element"><i class="fa-solid fa-hotel"></i> Khách sạn</li>
+                <li class="footer_service-element"><i class="fa-solid fa-wallet"></i> Ví nhân ái</li>
+                <li class="footer_service-element"><i class="fa-solid fa-coins"></i>Vay nhanh</li>
+            </ul>
+            <!-- footer client -->
+            <div class="footer_client">
+                <!-- client up -->
+                <ul class="footer_client-up">
+                    <p class="footer_client-up-title">Chăm sóc khách hàng</p>
+                    <li class="footer_client-up-element">địa chỉ: 
+                        <p class="client-element-para client-element-para-location">Lầu 6, Toà nhà Phú Mỹ Hưng, số 8 Hoàng Văn Thái, khu phố 1, Phường Tân Phú, Quận 7, Thành phố Hồ Chí Minh</p>
+                    </li>
+                    <li class="footer_client-up-element">hotline: 
+                        <p class="client-element-para">1900 5454 41</p>
+                        <i>(phí: 1.000đ/phút)</i>
+                    </li>
+                    <li class="footer_client-up-element">Email: 
+                        <p class="client-element-para">hotro@momo.vn</p>
+                    </li>
+                    <li class="footer_client-up-element footer_client-up-element-hotline">Tổng đài gọi ra:
+                        <div class="client-element-para">
+                            <p class="client-element-paragrap">028.7036.5555</p>
+                            <p class="client-element-paragrap">028.9999.5555</p>
+                        </div>
+                    </li>
+                    <div class="footer_client-up-help">
+                        <i class="fa-solid fa-user-gear footer_client-up-help-icon"></i>
+                        <div class="footer_client-up-help-text">
+                            <p>Hướng dẫn trợ giúp trên</p>
+                            <p>Ứng dụng Momo</p>
+                        </div>
+                    </div>
+                </ul>
+                <!-- client down -->
+                <ul class="footer_client-down">
+                    <p class="footer_client-title">Hợp tác doanh nghiệp</p>
+                    <li class="footer_client-element">hotline: 
+                        <p class="client-element-para">1900 636 652</p>
+                        <i>(phí: 1.000đ/phút)</i>
+                    </li>
+                    <li class="footer_client-element">Email: 
+                        <p class="client-element-para">merchant.care@momo.vn</p>
+                    </li>
+                    <li class="footer_client-element">Tổng đài gọi ra:
+                        <p class="client-element-para">business.momo.vn</p>
+                    </li>
+                    <div class="footer_client-help">
+                        <i class="fa-solid fa-people-group footer_client-help-icon"></i>
+                        <div class="footer_client-help-text">
+                            <p>Hợp tác doanh nghiệp</p>
+                            <p>đăng ký hợp tác</p>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+            <!-- footer connect -->
+            <div class="footer_right">
+                <div class="footer_connect">
+                    <p class="footer_connect-text">Kết nối với chung tôi</p>
+                    <div class="footer_connect-icon">
+                        <a href="#" class="connect-hover"><i class="icon-face fa-brands fa-facebook"></i></a>
+                        <a href="#" class="connect-hover"><i class="icon-tiktok fa-brands fa-tiktok"></i></a>
+                        <a href="#" class="connect-hover"><i class="icon-youtube fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer_apps">
+                    <p class="footer_apps-text">Tải ứng dụng trên điện thoại</p>
+                    <div class="footer_apps-all">
+                        <img src="./assets/css/img/QR app.jpg" alt="" class="footer_apps-all-qr">
+                        <div class="footer_apps-all-right">
+                            <img src="./assets/css/img/Google  play.webp" alt="" class="apps-all-right-chplay">
+                            <img src="./assets/css/img/App Store.webp" alt="" class="apps-all-right-ios">
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_certification">
+                    <p class="footer_certification-text">Được chứng nhận bởi </p>
+                    <img src="./assets/css/img/Bộ công thương.webp" alt="" class="footer_certification-img">
+                </div>
+            </div>
+    </footer>
+</body>
+</html>
