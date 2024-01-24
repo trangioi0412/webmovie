@@ -9,14 +9,18 @@ body{
     background: #F3D8E2;
 }
 
-/* form login */
-#form_login{
-    position: relative;
+/* form register */
+
+#form_register{
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 8% 0;
+    position: absolute;
+    top: 0;
+    left: 300px;
 }
+
 
 .form{
     background: url('./img/login\ momo.webp') no-repeat;
@@ -27,35 +31,76 @@ body{
     display: flex;
     border-radius: 10px;
 }
+/* form register left */
 
-/* form login left */
-.form_login-left{
+.form_register-left{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 120px 30px 0 0;
+    color: white;
+}
+
+.form_register-left-all{
+    text-align: center;
+}
+
+.form_register-left-title{
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.form_register-left-text{
+    font-size: 18px;
+}
+
+
+#form_register-left-btn{
+    margin-top: 30px;
+    height: 50px;
+    width: 120px;
+    background: #C82772;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* form register right */
+
+
+.form_register-right{
     background: white;
     width: 50%;
     display: flex;
     flex-direction: column;
     border-radius: 10px;
+    animation: register 1s ease-in-out;
 }
 
-.form_login-left-header{
+
+
+
+.form_register-right-header{
     display: flex;
     align-items: center;
     margin: 60px 0 35px 50px;
 }
 
-.form_login-left-header-logo{
+.form_register-right-header-logo{
     height: 60px;
     width: 60px;
     margin-right: 15px;
 }
 
-.form_login-left-header-text{
+.form_register-right-header-text{
     font-weight: 400;
     font-size: 40px;
 }
 
-.form_login-left-account,
-.form_login-left-password{
+.form_register-right-account,
+.form_register-right-password{
     height: 75px;
     width: 420px;
     margin: 10px 50px;
@@ -66,25 +111,25 @@ body{
     font-size: 20px;
 }
 
-.form_login-left-between{
+.form_register-right-between{
     display: flex;
     justify-content: space-around;
     font-size: 20px;
     margin-bottom: 30px;
 }
 
-.form_login-left-between-forget{
+.form_register-right-between-forget{
     text-decoration: none;
     color: black;
     font-weight: 600;
 }
 
-.form_login-left-button{
+.form_register-right-button{
     text-align: center;
     margin-bottom: 30px;
 }
 
-.form_login-left-btn{
+.form_register-right-btn{
     width: 150px;
     height: 50px;
     background: #C82772;
@@ -95,57 +140,26 @@ body{
     cursor: pointer;
 }
 
-.form_login-left-footer{
+.form_register-right-footer{
     text-align: center;
 }
 
-.form_login-left-footer-element{
+.form_register-right-footer-element{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.form_login-left-footer-element-facebook{
+.form_register-right-footer-element-facebook{
     font-size: 24px;
     color: #0A66FF;
     margin-right: 15px;
 }
-.form_login-left-footer-element-google{
+.form_register-right-footer-element-google{
     height: 35px;
     width: 35px;
 }
 
-/* form login right */
-.form_login-right{
-    width: 50%;
+.form_login-right-btn:focus #form_register{
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin: 0 30px 120px 0;
-    color: white;
-}
-
-.form_login-right-all{
-    text-align: center;
-}
-
-.form_login-right-title{
-    font-size: 50px;
-    font-weight: 400;
-}
-
-.form_login-right-text{
-    font-size: 20px;
-}
-
-
-.form_login-right-btn{
-    margin-top: 30px;
-    height: 50px;
-    width: 120px;
-    background: #C82772;
-    border: none;
-    color: white;
-    border-radius: 10px;
-    cursor: pointer;
 }

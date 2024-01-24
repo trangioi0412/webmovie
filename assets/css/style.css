@@ -132,10 +132,10 @@
     top: 45px;
     margin: 10px 0 0 10px;
     background: white;
-    width: 100px;
+    width: 150px;
     list-style: none;
     border-radius: 3px;
-    padding-left: 10px;
+    /* padding-left: 10px; */
     display:none;
     animation: faleIn 0.1s ease-in;
 }
@@ -162,12 +162,24 @@
     top: -30px;
     left: 0;
     position: absolute;
-    width: 100px;
+    width: 150px;
     height: 40px;
+}
+
+.header_right a{
+    color: black;
+    text-decoration: none;
 }
 
 .user-elment{
     margin: 5px 0;
+    padding: 10px 10px;
+    width: 100%;
+    
+}
+
+.user-elment:hover{
+    background-color: #fff0f6;
 }
 
 #slider{
@@ -278,14 +290,59 @@
 .content_show-flim-all{
     margin: 0 15px;
     overflow: hidden;
+    border-radius: 5px;
+}
+
+.show-flim-all-element{
+    position: relative;
+}
+
+.content_show-product{
+    position: absolute;
+    top: 0;
+    background: rgb(62, 61, 61,0.5);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.content_show-product-all{
+    color: white;
+    text-decoration: none;
+    border: 2px solid white;
+    padding: 10px;
+    margin: 20px 0;
+    animation: showIn 0.1s ease-in;
+}
+
+@keyframes showIn{
+    from{
+        transform: translateY(100px); 
+    }
+    to{
+        transform: translateY(0); 
+    }
+}
+
+.content_show-flim-all:hover .content_show-product{
+    display: flex;
+}
+
+.content_show-product-see{
+    opacity: 1;
 }
 
 .show-flim-all-element:hover{
     cursor: pointer;
 }
 
-.show-flim-all-element:hover{
-    transform: scale(1);
+.content_show-flim-all:hover .show-flim-element-text{
+    display: none;
 }
 
 .show-flim-all-element-img, 
@@ -301,9 +358,10 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    top: 650px;
+    top: 10px;
     position: absolute;
 }
+
 
 .show-flim-element-old{
     background: green;
@@ -990,15 +1048,15 @@
     opacity: 0.7;
 }
 
+
+
+
 #footer{
     display: flex;
     justify-content: center;
     background: black;
     color: grey;
 }
-
-
-
 
 .footer_connect-text,
 .footer_apps-text,
