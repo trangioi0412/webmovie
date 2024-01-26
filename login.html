@@ -55,16 +55,16 @@
     function validateLogin() {
 
         window.location.href = 'index.html';
-    // var username = document.getElementById('username').value;
-    // var password = document.getElementById('password').value;
+    var username = document.getElementById('username').value;
+    var password = document.getElementById('password').value;
 
-    // // Check if the username and password are correct (this is a simple example)
-    // if (username === 'yourUsername' && password === 'yourPassword') {
-    //     // Redirect to index.html
-    //     window.location.href = 'index.html';
-    // } else {
-    //     alert('Invalid username or password. Please try again.');
-    // }
+    // Check if the username and password are correct (this is a simple example)
+    if (username === 'yourUsername' && password === 'yourPassword') {
+        // Redirect to index.html
+        window.location.href = 'index.html';
+    } else {
+        alert('Invalid username or password. Please try again.');
+    }
 }
 // <button type="button" onclick="validateLogin()">Login</button>
     </script>
