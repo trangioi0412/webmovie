@@ -4,69 +4,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Đăng Nhập</title>
-    <link rel="stylesheet" href="./assets/css/login.css">
+    <link rel="stylesheet" href="./assets/css/css/login.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css?fbclid=IwAR13GeCKpDnRYumLZWBe8nDm7dQ6Ue96ZQS4S9ZRyHQs9_vmwN_tBqeu0r0">
 </head>
 <body>
     <div id="container">
-
         <!--form login  -->
-        <form action="" id="form_login">
-            <div class="form">
-                <!-- form login left -->
-                <div class="form_login-left">
-                    <div class="form_login-left-header">
-                        <a href="index.html"><img src="./assets/css/img/MoMo_Logo.png" alt="" class="form_login-left-header-logo"></a>
-                        <h1 class="form_login-left-header-text">Đăng Nhập</h1>
-                    </div>
-                    <input type="text" id="username" class="form_login-left-account" placeholder="Tài Khoản">
-                    <input type="password" id="password" class="form_login-left-password" placeholder="Mật Khẩu">
-                    <div class="form_login-left-between">
-                        <div class="form_login-left-between-remember">
-                            <input type="checkbox">
-                            <label>Nhớ mật khẩu</label>
+        <div class="container sign-in-container">
+            <form action="" class="form">
+                    <!-- form login left -->
+                    <div class="form_login form_register">
+                        <div class="form_login-left-header">
+                            <a href="index.html"><img src="./assets/css/img/MoMo_Logo.png" alt="" class="form_login-left-header-logo"></a>
+                            <h1 class="form_login-left-header-text">Đăng Nhập</h1>
                         </div>
-                        <a href="" class="form_login-left-between-forget">Quên mật khẩu?</a>
-                    </div>
-                    <div class="form_login-left-button">
-                       <button class="form_login-left-btn" onclick="validateLogin()">Đăng Nhập</button>
-                    </div>
-                    <div class="form_login-left-footer">
-                        <p>Đăng nhập bằng tài khoản của bạn</p>
-                        <div class="form_login-left-footer-element">
-                           <a href=""><i class="fa-brands fa-facebook form_login-left-footer-element-facebook"></i></a>
-                           <a href=""><img src="./assets/css/img/logo_google.png" alt="" class="form_login-left-footer-element-google"></a>
+                        <input type="text" id="username" class="form_login-left-account" placeholder="Tài Khoản">
+                        <input type="password" id="password" class="form_login-left-password" placeholder="Mật Khẩu">
+                        <span class="form_login-left-tb"></span>
+                        <div class="form_login-left-between">
+                            <div class="form_login-left-between-remember">
+                                <input type="checkbox">
+                                <label>Nhớ mật khẩu</label>
+                            </div>
+                            <a href="" class="form_login-left-between-forget">Quên mật khẩu?</a>
                         </div>
+                        <div class="form_login-left-button">
+                           <button class="form_login-left-btn">Đăng Nhập</button>
+                        </div>
+                        <div class="form_login-left-footer">
+                            <p>Đăng nhập bằng tài khoản của bạn</p>
+                            <div class="form_login-left-footer-element">
+                               <a href=""><i class="fa-brands fa-facebook form_login-left-footer-element-facebook"></i></a>
+                               <a href=""><img src="./assets/css/img/logo_google.png" alt="" class="form_login-left-footer-element-google"></a>
+                            </div>
+                        </div>
+                    </div>
+            </form>
+        </div>
+         <!-- form register -->
+        <div class="container sign-up-container">
+             <form action="" id="form">
+                    <!-- form register right -->
+                    <div class="form_login form_register">
+                     <div class="form_register-right-header">
+                         <a href="index.html"><img src="./assets/css/img/MoMo_Logo.png" alt="" class="form_register-right-header-logo"></a>
+                         <h1 class="form_register-right-header-text">Đăng Ký</h1>
+                     </div>
+                     <span class="Notification"></span>
+                     <input type="text" class="form_register-right-account" placeholder="Tài Khoản">
+                     <span class="account-element"></span>
+                     <input type="password" class="form_register-right-password" placeholder="Mật Khẩu">
+                     <span class="password-element"></span>
+                     <input type="password" class="form_register-right-password" id="form_register-right-password-again" placeholder="Nhập lại Mật Khẩu">
+                     <span class="password-again-element"></span>
+                     <div class="form_register-right-button">
+                         <button class="form_register-right-btn">Đăng Ký</button>
+                     </div>
+                     <div class="form_register-right-footer">
+                         <p>Đăng nhập bằng tài khoản của bạn</p>
+                         <div class="form_register-right-footer-element">
+                            <a href=""><i class="fa-brands fa-facebook form_register-right-footer-element-facebook"></i></a>
+                            <a href=""><img src="./assets/css/img/logo_google.png" alt="" class="form_register-right-footer-element-google"></a>
+                         </div>
+                     </div>
+                    </div>
+             </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <!-- form register left -->
+                <div class="form_register-left overlay-panel">
+                    <div class="form_register-left-all">
+                        <h1 class="form_register-left-title">Hello ^_^</h1>
+                        <p class="form_register-left-text">Bạn đã có tài khoản</p>
+                        <p class="form_register-left-text">Đăng Nhập tại đây</p>
+                        <p id="signIn" class="form_register-left-btn"> <i class="fa-solid fa-arrow-left"></i> Đăng Nhập</p>
                     </div>
                 </div>
                 <!-- form login right -->
-                <div class="form_login-right">
+                <div class="form_login-right overlay-panel">
                     <div class="form_login-right-all">
                         <h1 class="form_login-right-title">Xin Chào</h1>
                         <p class="form_login-right-text">Bạn chưa có tài khoản</p>
                         <p class="form_login-right-text">Đăng ký tại đây</p>
-                        <button id="button-lg" class="form_login-right-btn">Đăng Ký <i class="fa-solid fa-arrow-right"></i></button>
+                        <p id="signUp" class="form_login-right-btn">Đăng Ký <i class="fa-solid fa-arrow-right"></i></p>
                     </div>
                 </div>
             </div>
-        </form>
+        </div>
+    </div>
 
-    <script>
-    function validateLogin() {
-
-        window.location.href = 'index.html';
-    var username = document.getElementById('username').value;
-    var password = document.getElementById('password').value;
-
-    // Check if the username and password are correct (this is a simple example)
-    if (username === 'yourUsername' && password === 'yourPassword') {
-        // Redirect to index.html
-        window.location.href = 'index.html';
-    } else {
-        alert('Invalid username or password. Please try again.');
-    }
-}
-// <button type="button" onclick="validateLogin()">Login</button>
-    </script>
+    <script src="./assets/js/login.js"></script>
 </body>
 </html>

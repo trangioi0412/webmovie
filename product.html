@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sản phẩm</title>
-    <link rel="stylesheet" href="./assets/css/product.css">
+    <link rel="stylesheet" href="/assets/css/css/product.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css?fbclid=IwAR13GeCKpDnRYumLZWBe8nDm7dQ6Ue96ZQS4S9ZRyHQs9_vmwN_tBqeu0r0">
 </head>
 <body>
@@ -25,7 +25,7 @@
 
             <!-- header between cinema -->
             <div class="header_between-cinema">
-                <p class="header_margin header_between-text">rạp chiếu</p>
+                <p class="header_margin header_between-text">Rạp chiếu</p>
             </div>
             <p class="header_margin header_between-text">Phim chiếu</p>
             <p class="header_margin header_between-text">Review phim</p>
@@ -36,13 +36,16 @@
             </div>
         </div>
         <div class="header_right">
-            <i class="fa-solid fa-cart-shopping header_margin header_between-text header_right-item"></i>
+            <div class="header_right-cart-all">
+                <a href="cart.html"><i class="fa-solid fa-cart-shopping header_margin header_between-text header_right-item header_right-cart"></i></a>
+                <p class="header_right-number-element">0</p>
+            </div>
             <i class="fa-solid fa-magnifying-glass header_margin header_between-text header_right-item"></i>
             <div class="header_right-user">
                 <i class="fa-regular fa-circle-user header header_margin header_between-text header_right-item"></i>
                 <ul class="header_right-user-elment">
-                    <li class="user-elment">Đăng Nhập</li>
-                    <li class="user-elment">Đăng Ký</li>
+                   <a href="login.html"><li class="user-elment">Đăng Nhập</li></a> 
+                   <a href="register.html"><li class="user-elment">Đăng Ký</li></a> 
                 </ul>
             </div>
         </div>
@@ -50,139 +53,16 @@
     <!-- content -->
     <div id="content">
         <!-- content product -->
-        <div class="content_product">
-            <img src="./assets/css/img/ảnh 1.png" alt="" class="content_product-img">
-            <div class="content_product-between">
-                <p class="content_product-between-old">P</p>
-                <h3 class="content_product-between-name">Nhà vịt di cư</h3>
-                <div class="content_product-between-produce">
-                    <p class="content_product-between-produce-text">magration</p>
-                    <p class="content_product-between-produce-text">.</p>
-                    <p class="content_product-between-produce-text">2023</p>
-                    <p class="content_product-between-produce-text">.</p>
-                    <p class="content_product-between-produce-text">83 phút</p>
-                </div>
-                <div class="content_product-between-vote">
-                    <i class="fa-solid fa-star content_product-between-vote-icon"></i>
-                    <p class="content_product-between-vote-text">9.4</p>
-                </div>
-                <div class="content_product-between-voiceover">
-                    <p>2D</p>
-                </div>
-                <a href="book_tickers.html"><button class="content_product-between-btn">Mua Vé</button></a>
-            </div>
-            <p class="content-product-between-pragrap">Nhà Vịt Di Cư theo chân một gia đình vịt trời gồm vịt bố, vịt mẹ, cậu con trai tuổi teen Dax và vịt út Gwen, 
-                trong lần đầu tiên trải nghiệm chuyến di cư tiến về phía nam để trú đông. Thế nhưng, niềm vui vẻ sự háo hức kéo dài không bao lâu, gia đình vịt nhận ra, 
-                họ đang bay ngược chiều với tất cả các đàn vịt khác. Không kịp quay đầu, họ bất ngờ gặp phải loạt “chướng ngại vật” là những tòa nhà cao tầng của thành 
-                phố hiện đại. Liên tiếp sau đó là những thước phim đầy kịch tính nhưng vô cùng hài hước của nhà vịt trong quá trình khám phá đô thị mới.</p>
+        <div class="content_product">            
         </div>
         <!-- content show -->
-        <div class="content_show">
+    <div id="showtimes" class="content_show">
             <h1 class="content_show-title">Phim Hay trong Tuần</h1>
             <div class="content_show-flim">
-                <!-- coming soon 1 -->
-                <div class="content_show-flim-all">
-                    <div class="show-flim-all-element">
-                        <img src="./assets/css/img/ảnh 1.png" alt="" class="show-flim-all-element-img">
-                        <div class="show-flim-element-text">
-                            <p class="show-flim-element-old">P</p>
-                            <i class="fa-regular fa-circle-play show-flim-element-icon"></i>
-                            <p class="show-flim-element-number">1</p>
-                        </div>
-                        <div class="content_show-product">
-                            <a href="product.html" class="content_show-product-all">Xem chi tiết</a>
-                            <a href="" class="content_show-product-all">Mua vé</a>
-                        </div>
-                    </div>
-                    <div class="content_show-flim-name">
-                        <p class="flim-name">Nhà Vịt Di Cư</p>
-                        <p class="flim-category">Hài,Hoạt Hình</p>
-                        <p class="content_show-flim-vote"><i class="fa-solid fa-star flim-vote-star "></i> 9.4</p>
-                    </div>
-                </div>
-                <!-- coming soon 2 -->
-                <div class="content_show-flim-all">
-                    <div class="show-flim-all-element">
-                        <img src="./assets/css/img/ảnh 2.jpg" alt="" class="show-flim-all-element-img">
-                        <div class="show-flim-element-text">
-                            <p class="show-flim-element-old old_18">18+</p>
-                            <i class="fa-regular fa-circle-play show-flim-element-icon"></i>
-                            <p class="show-flim-element-number">2</p>
-                        </div>
-                        <div class="content_show-product">
-                            <a href="product.html" class="content_show-product-all">Xem chi tiết</a>
-                            <a href="" class="content_show-product-all">Mua vé</a>
-                        </div>
-                    </div>
-                    <div class="content_show-flim-name">
-                        <p class="flim-name">Giao Ước Quỷ</p>
-                        <p class="flim-category">Kinh Dị</p>
-                        <p class="content_show-flim-vote"><i class="fa-solid fa-star flim-vote-star "></i> 5.8</p>
-                    </div>
-                </div>
-                <!-- coming soon 3 -->
-                <div class="content_show-flim-all">
-                    <div class="show-flim-all-element">
-                        <img src="./assets/css/img/ảnh 3.jpg" alt="" class="show-flim-all-element-img">
-                        <div class="show-flim-element-text">
-                            <p class="show-flim-element-old old_13">13+</p>
-                            <i class="fa-regular fa-circle-play show-flim-element-icon"></i>
-                            <p class="show-flim-element-number">3</p>
-                        </div>
-                        <div class="content_show-product">
-                            <a href="product.html" class="content_show-product-all">Xem chi tiết</a>
-                            <a href="" class="content_show-product-all">Mua vé</a>
-                        </div>
-                    </div>
-                    <div class="content_show-flim-name">
-                        <p class="flim-name">Aquaman:Vương quốc...</p>
-                        <p class="flim-category">Phiêu lưu,hành động</p>
-                        <p class="content_show-flim-vote"><i class="fa-solid fa-star flim-vote-star "></i> 9.2</p>
-                    </div>
-                </div>
-                <!-- coming soon 4 -->
-                <div class="content_show-flim-all">
-                    <div class="show-flim-all-element">
-                        <img src="./assets/css/img/ảnh 4.jpg" alt="" class="show-flim-all-element-img">
-                        <div class="show-flim-element-text">
-                            <p class="show-flim-element-old">P</p>
-                            <i class="fa-regular fa-circle-play show-flim-element-icon"></i>
-                            <p class="show-flim-element-number">4</p>
-                        </div>
-                        <div class="content_show-product">
-                            <a href="product.html" class="content_show-product-all">Xem chi tiết</a>
-                            <a href="" class="content_show-product-all">Mua vé</a>
-                        </div>
-                    </div>
-                    <div class="content_show-flim-name">
-                        <p class="flim-name">Trên bàn nhậu, dưới bàn...</p>
-                        <p class="flim-category">Hài</p>
-                        <p class="content_show-flim-vote"><i class="fa-solid fa-star flim-vote-star "></i> 7.7</p>
-                    </div>
-                </div>
-                <!-- coming soon 5 -->
-                <div class="content_show-flim-all">
-                    <div class="show-flim-all-element">
-                        <img src="./assets/css/img/ảnh 5.jpg" alt="" class="show-flim-all-element-img">
-                        <div class="show-flim-element-text">
-                            <p class="show-flim-element-old">P</p>
-                            <i class="fa-regular fa-circle-play show-flim-element-icon"></i>
-                            <p class="show-flim-element-number">5</p>
-                        </div>
-                        <div class="content_show-product">
-                            <a href="product.html" class="content_show-product-all">Xem chi tiết</a>
-                            <a href="" class="content_show-product-all">Mua vé</a>
-                        </div>
-                    </div>
-                    <div class="content_show-flim-name">
-                        <p class="flim-name">Thiếu niên và chim Diệc</p>
-                        <p class="flim-category">Hoạt Hình,phiêu lưu</p>
-                        <p class="content_show-flim-vote"><i class="fa-solid fa-star flim-vote-star "></i> 9</p>
-                    </div>
-                </div>
+                
             </div>
         </div>
-        <div class="content_blog">
+        <div id="blog" class="content_blog">
             <div class="content_blog-header">
                 <h1 class="content_blog-header-title">Blog phim ảnh</h1>
                 <p class="content_blod-header-title-below">Tổng hợp và Review các bộ phim hot, và phim chiếu rạp hay mỗi ngày</p>
@@ -194,44 +74,44 @@
                 </div>
                     <div class="content_blog-container-all">
                         <div class="content_blog-container-flim">
-                            <img src="./assets/css/img/Blog phim 1.jpg" alt="" class="blog-container-flim-img">
+                            <img src="./assets/css/img/blog_phim_1.jpg" alt="" class="blog-container-flim-img">
                             <p class="blog-container-flim-paragrap">Danh sách phim hay trên Nextflix tháng 12/2023</p>
                             <p class="blog-container-flim-view">5.5k lượt xem</p>
                         </div>
                         <div class="content_blog-container-flim">
-                            <img src="./assets/css/img/Blog phim 2.jpg" alt="" class="blog-container-flim-img">
+                            <img src="./assets/css/img/blog_phim_2.jpg" alt="" class="blog-container-flim-img">
                             <p class="blog-container-flim-paragrap">Danh sách Anime được chuyển thể live-action năm 2024</p>
                             <p class="blog-container-flim-view"></p>
                         </div>
                         <div class="content_blog-container-flim">
-                            <img src="./assets/css/img/Blog phim 3.jpg" alt="" class="blog-container-flim-img">
+                            <img src="./assets/css/img/blog_phim_3.jpg" alt="" class="blog-container-flim-img">
                             <p class="blog-container-flim-paragrap">Top phim bộ Hàn Quốc đáng xem năm 2023</p>
                             <p class="blog-container-flim-view"></p>
                         </div>
                         <div class="content_blog-container-flim">
-                            <img src="./assets/css/img/Blog phim 4.jpg" alt="" class="blog-container-flim-img">
+                            <img src="./assets/css/img/blog_phim_4.jpg" alt="" class="blog-container-flim-img">
                             <p class="blog-container-flim-paragrap">Top phim về trí tuệ nhân tạo đáng xem nhất</p>
                             <p class="blog-container-flim-view">7k lượt xem</p>
                         </div>
                     </div>
                     <div class="content_blog-container-all">
                         <div class="content_blog-container-flim">
-                            <img src="./assets/css/img/Blog phim 5.jpg" alt="" class="blog-container-flim-img">
+                            <img src="./assets/css/img/blog_phim_5.jpg" alt="" class="blog-container-flim-img">
                             <p class="blog-container-flim-paragrap">Hướng dẫn xem phim Marvel dành cho người mới bắt đầu</p>
                             <p class="blog-container-flim-view">71.6k lượt xem</p>
                         </div>
                         <div class="content_blog-container-flim">
-                            <img src="./assets/css/img/BLog phim 6.jpg" alt="" class="blog-container-flim-img">
+                            <img src="./assets/css/img/blog_phim_6.jpg" alt="" class="blog-container-flim-img">
                             <p class="blog-container-flim-paragrap">Danh sách phim hay Netflix tháng 4/2023</p>
                             <p class="blog-container-flim-view">1.4k lượt xem</p>
                         </div>
                         <div class="content_blog-container-flim">
-                            <img src="./assets/css/img/BLog phim 7.jpg" alt="" class="blog-container-flim-img">
+                            <img src="./assets/css/img/blog_phim_7.jpg" alt="" class="blog-container-flim-img">
                             <p class="blog-container-flim-paragrap">Những bộ phim kinh điển không thể bỏ qua</p>
                             <p class="blog-container-flim-view">1k lượt xem</p>
                         </div>
                         <div class="content_blog-container-flim">
-                            <img src="./assets/css/img/BLog phim 8.jpg" alt="" class="blog-container-flim-img">
+                            <img src="./assets/css/img/blog_phim_8.jpg" alt="" class="blog-container-flim-img">
                             <p class="blog-container-flim-paragrap">Top những phim Anime siêu nhân nhất định phải xem</p>
                             <p class="blog-container-flim-view">23.5k lượt xem</p>
                         </div>
@@ -240,8 +120,9 @@
             <button class="content_blog-btn"><i class="fa-solid fa-arrow-down"></i> xem thêm </button>
         </div>
     </div>
+</div>
       <!-- footer -->
-      <footer id="footer">
+<footer id="footer">
         <!-- footer buy -->
         <ul class="footer_buy">
             <p class="footer_buy-title">MUA VÉ XEM PHIM</p>
@@ -326,18 +207,19 @@
             <div class="footer_apps">
                 <p class="footer_apps-text">Tải ứng dụng trên điện thoại</p>
                 <div class="footer_apps-all">
-                    <img src="./assets/css/img/QR app.jpg" alt="" class="footer_apps-all-qr">
+                    <img src="./assets/css/img/QR_app.jpg" alt="" class="footer_apps-all-qr">
                     <div class="footer_apps-all-right">
-                        <img src="./assets/css/img/Google  play.webp" alt="" class="apps-all-right-chplay">
-                        <img src="./assets/css/img/App Store.webp" alt="" class="apps-all-right-ios">
+                        <img src="./assets/css/img/Google_play.webp" alt="" class="apps-all-right-chplay">
+                        <img src="./assets/css/img/App_Store.webp" alt="" class="apps-all-right-ios">
                     </div>
                 </div>
             </div>
             <div class="footer_certification">
                 <p class="footer_certification-text">Được chứng nhận bởi </p>
-                <img src="./assets/css/img/Bộ công thương.webp" alt="" class="footer_certification-img">
+                <img src="./assets/css/img/bo_cong_thuong.webp" alt="" class="footer_certification-img">
             </div>
         </div>
 </footer>
+<script src="./assets/js/product.js"></script>
 </body>
 </html>

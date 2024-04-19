@@ -11,6 +11,12 @@
     background: #9C2021 !important;
 }
 
+.old_13_18{
+    height: 35px;
+    width: 45px;
+    padding: 9px 10px;
+}
+
 #header{
     display: flex;
     justify-content: space-around;
@@ -29,6 +35,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.header_left-link{
+    display: flex;
+    align-items: center;
+}
+
+.header_left-text{
+    border-left: 1px solid black;
+}
+
+.header_left-text > p{
+    padding: 2px 0 0 10px;
 }
 
 .header_margin{
@@ -75,6 +94,11 @@
     font-size: 16px;
     font-weight: 700;
     margin: 0 8px;
+}
+
+.header_between-text > a{
+    text-decoration: none;
+    color: black;
 }
 
 .header_between-text:hover{
@@ -132,12 +156,13 @@
     top: 45px;
     margin: 10px 0 0 10px;
     background: white;
-    width: 100px;
+    width: 150px;
     list-style: none;
     border-radius: 3px;
-    padding-left: 10px;
+    /* padding-left: 10px; */
     display:none;
     animation: faleIn 0.1s ease-in;
+    border: 1px solid grey;
 }
 @keyframes faleIn {
     from{
@@ -162,7 +187,7 @@
     top: -30px;
     left: 0;
     position: absolute;
-    width: 100px;
+    width: 150px;
     height: 40px;
 }
 
@@ -171,17 +196,45 @@
     text-decoration: none;
 }
 
+.header_right-cart-all{
+    position: relative;
+}
+
+
+.header_right-number-element{
+    position: absolute;
+    top: -15px;
+    right: 0px;
+    background: red;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 50%;
+    font-size: 12px;
+}
+
 .user-elment{
     margin: 5px 0;
+    padding: 10px 10px;
+    width: 100%;
+    
 }
+
+.user-elment:hover{
+    background-color: #fff0f6;
+}
+
+
 
 /* content */
 
 #content{
     margin-top: 130px;
     display:flex;
+    flex-direction: column;
     justify-content: center;
-    height: 500px;
+    align-items: center;    
+    margin-bottom: 20px;
+    min-height: 550px;
 }
 .content{
     border: 1px solid black;

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Giỏ hàng</title>
-    <link rel="stylesheet" href="./assets/css/cart.css">
+    <link rel="stylesheet" href="./assets/css/css/cart.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css?fbclid=IwAR13GeCKpDnRYumLZWBe8nDm7dQ6Ue96ZQS4S9ZRyHQs9_vmwN_tBqeu0r0">
 </head>
 <body>
@@ -25,7 +25,7 @@
 
             <!-- header between cinema -->
             <div class="header_between-cinema">
-                <p class="header_margin header_between-text">rạp chiếu</p>
+                <p class="header_margin header_between-text">Rạp chiếu</p>
             </div>
             <p class="header_margin header_between-text">Phim chiếu</p>
             <p class="header_margin header_between-text">Review phim</p>
@@ -36,13 +36,16 @@
             </div>
         </div>
         <div class="header_right">
-            <a href="cart.html"><i class="fa-solid fa-cart-shopping header_margin header_between-text header_right-item"></i></a>
+            <div class="header_right-cart-all">
+                <a href="cart.html"><i class="fa-solid fa-cart-shopping header_margin header_between-text header_right-item header_right-cart"></i></a>
+                <p class="header_right-number-element">0</p>
+            </div>
             <i class="fa-solid fa-magnifying-glass header_margin header_between-text header_right-item"></i>
             <div class="header_right-user">
                 <i class="fa-regular fa-circle-user header header_margin header_between-text header_right-item"></i>
                 <ul class="header_right-user-elment">
                    <a href="login.html"><li class="user-elment">Đăng Nhập</li></a> 
-                   <a href=""><li class="user-elment">Đăng Ký</li></a> 
+                   <a href="register.html"><li class="user-elment">Đăng Ký</li></a> 
                 </ul>
             </div>
         </div>
@@ -50,43 +53,7 @@
 
     <!-- content -->
     <div id="content">
-        <div class="content">
-            <div class="content_top">
-                <img src="./assets/css/img/ảnh 1.png" alt="" class="content_img">
-                <div class="content_flimm">
-                    <h3 class="content_flim-name">Nhà vịt di cư</h3>
-                    <p class="content_flim-old">P</p>
-                    <div class="content_flim-cinema">
-                        <i class="fa-solid fa-film content_flim-cinema-icon"></i>
-                        <p class="content_flim-cinema-text">Cinema Đà Lạt</p>
-                    </div>
-                    <div class="content_flim-cinema">
-                        <i class="fa-solid fa-location-dot content_flim-cinema-icon"></i>
-                        <p class="content_flim-cinema-text">Quảng trường Lâm Viên, P.10,TP. Đà Lạt</p>
-                    </div>
-                    <div class="content_flim-cinema">
-                        <i class="fa-solid fa-calendar-days content_flim-cinema-icon"></i>
-                        <p class="content_flim-cinema-text">14-01-2024</p>
-                    </div>
-                    <div class="content_flim-cinema">
-                        <i class="fa-solid fa-clock content_flim-cinema-icon"></i>
-                        <p class="content_flim-cinema-text">11h30 - 13h</p>
-                    </div>
-                    <p class="content_flim-cinema-time">Phòng Chiếu: 05 <strong>.</strong> 2D Lồng tiếng</p>
-                    <p class="">Ghế:</p>
-                </div>
-                <div class="content_payment">
-                    <p class="content_payment-text">Số Lượng:</p>
-                    <p class="content_payment-text">Giá:</p>
-                    <p class="content_payment-text">Tổng Tiền:</p>
-                </div>
-            </div>
-            <div class="content_button">
-                <button class="content_button-btn">Hỗ Trợ</button>
-                <button class="content_button-btn content_button-cancel">Hủy Vé</button>
-                <button class="content_button-btn">Mua Vé</button>
-            </div>
-        </div>
+
     </div>
 
     <!-- footer -->
@@ -175,18 +142,20 @@
             <div class="footer_apps">
                 <p class="footer_apps-text">Tải ứng dụng trên điện thoại</p>
                 <div class="footer_apps-all">
-                    <img src="./assets/css/img/QR app.jpg" alt="" class="footer_apps-all-qr">
+                    <img src="./assets/css/img/QR_app.jpg" alt="" class="footer_apps-all-qr">
                     <div class="footer_apps-all-right">
-                        <img src="./assets/css/img/Google  play.webp" alt="" class="apps-all-right-chplay">
-                        <img src="./assets/css/img/App Store.webp" alt="" class="apps-all-right-ios">
+                        <img src="./assets/css/img/Google_play.webp" alt="" class="apps-all-right-chplay">
+                        <img src="./assets/css/img/App_Store.webp" alt="" class="apps-all-right-ios">
                     </div>
                 </div>
             </div>
             <div class="footer_certification">
                 <p class="footer_certification-text">Được chứng nhận bởi </p>
-                <img src="./assets/css/img/Bộ công thương.webp" alt="" class="footer_certification-img">
+                <img src="./assets/css/img/bo_cong_thuong.webp" alt="" class="footer_certification-img">
             </div>
         </div>
 </footer>
+
+<script src="./assets/js/cart.js"></script>
 </body>
 </html>
